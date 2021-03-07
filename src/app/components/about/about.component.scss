@@ -1,0 +1,22 @@
+.about {
+  min-height: 85vh;
+}
+
+header {
+  background: rgb(21, 65, 77);
+  height: 70vh;
+  color: #FFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 6em;
+  user-select: none;
+  text-align: center;
+  line-height: 0.8em;
+
+  b {
+    font-family: 'Fascinate', cursive;
+    text-shadow: 0 0 6px rgba($color: #FFF, $alpha: .6);
+    text-transform: uppercase;
+  }
+}
