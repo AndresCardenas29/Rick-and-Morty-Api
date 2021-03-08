@@ -19,3 +19,9 @@ header {
     text-shadow: 0 0 6px rgba($color: #FFF, $alpha: .6);
   }
 }
+
+@media (max-width: 360px) {
+  header {
+    font-size: 3em;
+  }
+}

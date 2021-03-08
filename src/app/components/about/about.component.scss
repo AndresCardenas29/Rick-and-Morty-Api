@@ -20,3 +20,9 @@ header {
     text-transform: uppercase;
   }
 }
+
+@media (max-width: 360px) {
+  header {
+    font-size: 3em;
+  }
+}

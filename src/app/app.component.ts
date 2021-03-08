@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, Renderer2, ViewChild } from '@angular/core';
 import * as Icon from "@fortawesome/free-solid-svg-icons";
 
 @Component({
@@ -8,10 +8,27 @@ import * as Icon from "@fortawesome/free-solid-svg-icons";
 })
 export class AppComponent {
   
+  @ViewChild('login') login: ElementRef; 
   icon = Icon;
 
+  constructor(
+    private render:Renderer2
+  ){
+    
+  }
+
   onClickOpenLogin() {
-    alert("Login!");
+    this.render.addClass(this.login.nativeElement, "show");
+    
+  }
+
+  onClick(){
+    this.render.removeClass(this.login.nativeElement, 'show');
+  }
+
+  onKeyPress($event){
+    console.log($event);
+    
   }
 
 }

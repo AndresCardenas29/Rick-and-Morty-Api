@@ -5,10 +5,10 @@ import { GaleryComponent } from './components/galery/galery.component';
 import { HomeComponent } from './components/home/home.component';
 
 const routes: Routes = [
-  {path: '', component: HomeComponent},
-  {path: 'gallery', component: GaleryComponent},
-  {path: 'about', component: AboutComponent},
-  {path: '**', redirectTo: '/'}
+  { path: '', pathMatch: 'full', component: HomeComponent },
+  { path: 'gallery', component: GaleryComponent },
+  { path: 'about', component: AboutComponent },
+  { path: '**', redirectTo: '/' }
 ];
 
 @NgModule({
