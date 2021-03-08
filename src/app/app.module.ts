@@ -11,6 +11,7 @@ import { AboutComponent } from './components/about/about.component';
 import { GaleryComponent } from './components/galery/galery.component';
 import { LoginComponent } from './components/login/login.component';
 import { SearchComponent } from './components/search/search.component';
+import { HttpClientModule } from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { SearchComponent } from './components/search/search.component';
     AppRoutingModule,
     NgbModule,
     FontAwesomeModule,
-    SweetAlert2Module
+    SweetAlert2Module,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

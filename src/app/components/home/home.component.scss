@@ -20,6 +20,33 @@ header {
   }
 }
 
+.imagen {
+  width: 150px;
+  img {
+    width: 100%;
+  }
+}
+
+.card {
+  margin: 10px;
+  line-height: .5em;
+  .card-title {
+    font-size: 1.4em;
+    font-weight: 700;
+    width: 150px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  p{
+    width: 150px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    line-height: 1em;
+  }
+}
+
 @media (max-width: 360px) {
   header {
     font-size: 3em;
